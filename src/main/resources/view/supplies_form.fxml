@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1120.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SuppliesFormController">
+   <children>
+      <ImageView disable="true" fitHeight="650.0" fitWidth="1166.0" layoutX="-36.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Untitled%20design.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="99.0" layoutY="98.0" opacity="0.89" prefHeight="492.0" prefWidth="894.0" style="-fx-background-color: #00264d;" styleClass="edge-button" stylesheets="@../style/style.css">
+         <children>
+            <TextField fx:id="txtid" layoutX="18.0" layoutY="175.0" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtname" layoutX="321.0" layoutY="176.0" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtnic" layoutX="18.0" layoutY="270.0" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtcontact" layoutX="321.0" layoutY="270.0" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtadress" layoutX="614.0" layoutY="175.0" prefHeight="26.0" prefWidth="240.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="18.0" layoutY="135.0" text="Supplier ID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="332.0" layoutY="136.0" text="Supplier Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="232.0" prefHeight="38.0" prefWidth="171.0" text="Supplier NIC" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="321.0" layoutY="232.0" prefHeight="38.0" prefWidth="200.0" text="Supplier Contact" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="614.0" layoutY="131.0" prefHeight="38.0" prefWidth="186.0" text="Supplier Adress" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="67.0" layoutY="384.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #C3FDB8;" styleClass="edge-button" text="Update">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="253.0" layoutY="384.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #C3FDB8;" styleClass="edge-button" text="Delete">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="435.0" layoutY="384.0" onAction="#btnSaveOnAction" style="-fx-background-color: #C3FDB8;" styleClass="edge-button" text="Save">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="595.0" layoutY="384.0" onAction="#btnSearchOnAction" style="-fx-background-color: #C3FDB8;" styleClass="edge-button" text="Search">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="760.0" layoutY="384.0" onAction="#btnClearOnAction" style="-fx-background-color: #C3FDB8;" styleClass="edge-button" text="Clear">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="345.0" layoutY="50.0" text="SUPPLIER" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#00ff2b" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

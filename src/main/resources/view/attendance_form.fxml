@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1120.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AttendanceFormController">
+   <children>
+      <ImageView disable="true" fitHeight="650.0" fitWidth="1155.0" layoutX="-26.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Untitled%20design.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="72.0" layoutY="29.0" opacity="0.9" prefHeight="589.0" prefWidth="985.0" style="-fx-background-color: #00264d;" styleClass="edge-button" stylesheets="@../style/style.css">
+         <children>
+            <ComboBox fx:id="txtEmployeeId" layoutX="200.0" layoutY="154.0" onAction="#cbmIdOnAction" prefHeight="25.0" prefWidth="240.0" />
+            <Label layoutX="37.0" layoutY="155.0" text="Employee ID :" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="312.0" prefHeight="37.0" prefWidth="189.0" text="Attendance :" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="285.0" layoutY="317.0" mnemonicParsing="false" selected="true" text="yes" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="btnGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="419.0" layoutY="317.0" mnemonicParsing="false" selected="true" text="no" textFill="WHITE" toggleGroup="$btnGroup">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="478.0" layoutY="155.0" text="Employee Name :" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOrderDate" layoutX="124.0" layoutY="208.0" prefHeight="34.0" prefWidth="153.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOrderTime" layoutX="124.0" layoutY="256.0" prefHeight="34.0" prefWidth="133.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblName" layoutX="654.0" layoutY="150.0" prefHeight="34.0" prefWidth="189.0" textFill="#eee3e3">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="643.0" layoutY="312.0" onAction="#btnSaveOnAction" style="-fx-background-color: #C3FDB8;" styleClass="edge-button" text="Save">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="tblAttendens01" layoutX="157.0" layoutY="373.0" prefHeight="200.0" prefWidth="701.0">
+              <columns>
+                <TableColumn fx:id="tblId" prefWidth="178.00003051757812" text="ID" />
+                <TableColumn fx:id="tblDate" prefWidth="173.0" text="Date" />
+                  <TableColumn fx:id="tblTime" prefWidth="171.0" text="Time" />
+                  <TableColumn fx:id="tblAttendens" prefWidth="178.0" text="Present or Absent" />
+              </columns>
+            </TableView>
+            <Label layoutX="342.0" layoutY="41.0" text="ATTENDANCE" underline="true">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.004761904761904745">
+                     <stops>
+                        <Stop color="#1ac931" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="214.0" text="Date :" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="262.0" text="Time :" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
